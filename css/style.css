@@ -1,0 +1,661 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1240px;
+    margin: 0px auto;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+
+/* =-=-=-=-=-=-=-= Header Part Start =-=-=-=-=-=-=-=-= */
+
+header{
+    background-color: rgb( 8, 114, 185 );
+    padding: 10px 0;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+header p{
+    font-size: 13px;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    color: rgb( 231, 231, 231 );
+}
+header .icons ul li{
+    display: inline-block;
+    margin-left: 20px;
+    transition: .8s;
+}
+header .icons ul li a{
+    color: rgb( 255, 255, 255 );
+}
+header .icons ul li a:hover{
+    color: rgb(6, 6, 66);
+}
+
+/* =-=-=-=-=-=-=-= Header Part End =-=-=-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-=-= Navbar Part Start =-=-=-=-=-=-=-=-= */
+
+#navbar{
+    padding: 20px 0;
+}
+#navbar .container{
+    display: flex;
+    justify-content: space-between;
+}
+#navbar .logo img{
+    width: 100%;
+}
+#navbar .menu{
+    padding-top: 10px;
+}
+#navbar .menu ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+#navbar .menu ul li a{
+    font-size: 14px;
+    font-family: "OpenSans", sans-serif;
+    color: #353535;
+    font-weight: 400;
+    transition: .8s;
+}
+#navbar .menu ul li a:hover{
+    color: rgb( 8, 114, 185 );
+}
+
+/* =-=-=-=-=-=-=-= Navbar Part End =-=-=-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-=-= Banner Part Start =-=-=-=-=-=-=-=-= */
+
+#banner{
+    background-image: url(../img/banner.png);
+    background-size: cover;
+}
+#banner .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+#banner .overlay .container{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    align-items:flex-end;
+}
+#banner .overlay .text{
+    padding-top: 150px;
+}
+#banner .overlay .text h3{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: rgb( 255, 255, 255 );
+    text-align: right;
+}
+#banner .overlay .text h1{
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb( 255, 255, 255 );
+    font-weight: bold;
+    text-align: right;
+}
+#banner .overlay .text p{
+    font-size: 13px;
+    font-family: "OpenSans", sans-serif;
+    color: rgb( 255, 255, 255 );
+    line-height: 1.846;
+    text-align: right;
+    width: 438px;
+    padding: 25px 0;
+}
+#banner .overlay .button{
+    padding-bottom: 150px;
+}
+#banner .overlay .button a{
+    height: 50px;
+    width: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    border: 1px solid rgb( 255, 255, 255 );
+    color: rgb( 255, 255, 255 );
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    padding: 8px 15px;
+    margin-left: 10px;
+    transition: .8s;
+}
+#banner .overlay .button a:hover{
+    background-color: rgb( 8, 114, 185 );
+}
+
+  /* =-=-=-=-=-=-=-= Banner Part End =-=-=-=-=-=-=-=-= */
+
+  /* =-=-=-=-=-=-=-= About Us Part Start =-=-=-=-=-=-=-=-= */
+
+#about_us{
+    margin: 100px 0;
+}
+#about_us .title{
+    text-align: center;
+    margin-bottom: 70px;
+}
+#about_us .title h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#about_us .title img{
+    text-align: center;
+    width: 6%;
+    margin-right: 10px;
+}
+#about_us .container{
+    display: flex;
+    justify-content: space-between;
+}
+#about_us .image{
+    width: 40%;
+}
+#about_us .image img{
+    width: 100%;
+}
+#about_us .details{
+    width: 58%;
+    align-self: center;
+}
+#about_us .details p{
+    width: 700px;
+    font-size: 16px;
+    font-family: "OpenSans", sans-serif;
+    color: #6b6b6b;
+    line-height: 2;
+}
+
+  /* =-=-=-=-=-=-=-= About Us Part End =-=-=-=-=-=-=-=-= */
+
+  /* =-=-=-=-=-=-=-= Our services Part start =-=-=-=-=-=-=-=-= */
+
+#services{
+    margin: 100px 0;
+}
+#services .title{
+    text-align: center;
+    margin-bottom: 70px;
+}
+#services .title h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#services .title img{
+    text-align: center;
+    width: 6%;
+    margin-right: 55px;
+}
+#services .container{
+    display: flex;
+    justify-content: space-between;
+}
+#services .item{
+    width: 30%;
+    margin-top: -50px;
+}
+#services .item .round{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 auto;
+    transform: translateY(50%);
+    position: relative;
+}
+#services .item .round .second_round{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+    margin: 0 auto;
+    transform: translate(50%,50%);
+    bottom: 50%;
+    right: 50%;
+    position: absolute;
+    transition: .8s;
+    /* box-shadow: 1px 2px 10px -2px #000000; */
+}
+#services .item .round:hover .second_round{
+    border: 1px solid #5bc5f4;
+}
+#services .item .round .inner_round{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    transform: translate(50%,50%);
+    bottom: 50%;
+    right: 50%;
+    position: absolute;
+    transition: .8s;
+    /* box-shadow: 1px 2px 10px -2px #000000; */
+}
+#services .item .round .inner_round .image1{
+    /* margin: 17px 21.5px; */
+    transform: translate(30%,40%);
+}
+#services .item .round .inner_round .image2{
+    transform: translate(23%,37%);
+}
+#services .item .round .inner_round .image3{
+    transform: translate(25%,50%);
+}
+#services .item .round:hover .inner_round{
+    background-color: #5bc5f4;
+}
+#services .item .details{
+    width: 100%;
+    background-color: #f1f1f1; 
+    /* box-shadow: 1px 2px 10px -2px #000000; */
+}
+#services .item .details h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #353535;
+    padding-top: 60px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+#services .item .details p{
+    font-family: "OpenSans", sans-serif;
+    font-size: 16px;
+    color: #6b6b6b;
+    text-align: center;
+    line-height: 2;
+    padding-bottom: 15px;
+    margin: 0 10px;
+}
+
+  /* =-=-=-=-=-=-=-= Our services Part End =-=-=-=-=-=-=-=-= */
+
+  /* =-=-=-=-=-=-=-= Our Portfolio Part Start =-=-=-=-=-=-=-=-= */
+
+#portfolio{
+    margin: 100px 0;
+}
+#portfolio .title{
+    text-align: center;
+}
+#portfolio .title h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#portfolio .title img{
+    text-align: center;
+    width: 6%;
+    margin-right: 70px;
+}
+#portfolio .container{
+    display: flex;
+    justify-content: space-between;
+}
+#portfolio .item{
+    width: 23%;
+    margin-top: 60px;
+}
+#portfolio .item .image{
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+#portfolio .item .image img{
+    width: 100%;
+}
+#portfolio .item .image .overlay{
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .8s;
+}
+#portfolio .item .image:hover .overlay{
+    height: 99%;
+    opacity: 100%;
+}
+#portfolio .item .image .overlay img{
+    max-width: 15%;
+    /* transform: translate(300%,400%); */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+}
+
+/* =-=-=-=-=-=-=-= Our Portfolio Part End =-=-=-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-=-= Our Team Part Start =-=-=-=-=-=-=-=-= */
+
+#our_team{
+    margin: 100px 0;
+}
+#our_team .title{
+    text-align: center;
+}
+#our_team .title h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#our_team .title img{
+    text-align: center;
+    width: 6%;
+    margin-right: 10px;
+}
+#our_team .container{
+    display: flex;
+    justify-content: space-between;
+}
+#our_team .item{
+    width: 23%;
+    margin-bottom: -100px;
+    margin-top: 50px;
+}
+#our_team .item .image{
+    width: 100%;
+    position: relative;
+}
+#our_team .item .image img{
+    width: 100%;
+}
+#our_team .item .image .overlay{
+    height: 99%;
+    width: 0%;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    opacity: 0%;
+    top: 0;
+    right: 0;
+    transition: .8s;
+}
+#our_team .item .image:hover .overlay{
+    height: 99%;
+    width: 30%;
+    opacity: 100%;
+}
+#our_team .item .image .overlay .icons{
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    position: relative;
+}
+#our_team .item .image .overlay .icons ul li{
+    height: 50px;
+    width: 50px;
+    border: 1px solid rgb( 231, 231, 231 );
+    border-radius: 50%;
+    position: relative;
+    transition: .8s;
+}
+#our_team .item .image .overlay .icons ul li a{
+    color: rgb( 231, 231, 231 );
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+#our_team .item .image .overlay .icons ul li:hover{
+    background-color: rgb( 8, 114, 185 );
+}
+#our_team .item .details{
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+    color: #353535;
+}
+#our_team .item .details h3{
+    font-size: 20px;
+    font-weight: bold;
+    transition: .8s;
+}
+#our_team .item .details h3:hover{
+    color: rgb( 8, 114, 185 );
+}
+#our_team .item .details h4{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+/* =-=-=-=-=-=-=-= Our Team Part End =-=-=-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-=-= Testimonial Part Start =-=-=-=-=-=-=-=-= */
+
+#testimonial{
+    margin: 200px 0;
+}
+#testimonial .title{
+    text-align: center;
+}
+#testimonial .title h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#testimonial .title img{
+    text-align: center;
+    width: 6%;
+    margin-right: 33px;
+}
+#testimonial .container{
+    display: flex;
+    justify-content: space-between;
+}
+#testimonial .items{
+    width: 49%;
+    position: relative;
+    margin-top: 50px;
+}
+#testimonial .items .image{
+    text-align: center;
+}
+#testimonial .items .image img{
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+#testimonial .items .details{
+    background-color: #f1f1f1;
+    width: 100%;
+    margin-top: 30px;
+    
+}
+#testimonial .items .details .shape{
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    transform: rotate(45deg);
+}
+#testimonial .items .details .text{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #f1f1f1;
+    position: absolute;
+    margin-top: -75px;
+}
+#testimonial .items .details .text h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #353535;
+}
+#testimonial .items .details .text img{
+    margin: 15px 0;
+}
+#testimonial .items .details .text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: #353535;
+}
+#testimonial .items .details .text p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #353535;
+    line-height: 2;
+    margin: 15px 0;
+}
+
+/* =-=-=-=-=-=-=-= Testimonial Part End =-=-=-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-=-= Footer Part Start =-=-=-=-=-=-=-=-= */
+
+footer{
+    background-color: #353535;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+footer .logo{
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+footer .logo p{
+    font-family: "OpenSans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb( 255, 255, 255 );
+    margin: 20px 0;
+    line-height: 2;
+}
+footer .contact{
+    width: 25%;
+    margin-left: 30px;
+}
+footer .contact h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb( 255, 255, 255 );
+    margin: 30px 0;
+}
+footer .contact .item{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+footer .contact .item .icon{
+    width: 20%;
+}
+footer .contact .item .list{
+    width: 80%;
+}
+footer .contact .item .list{
+    font-family: "OpenSans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb( 255, 255, 255 );
+}
+footer .contact .item .list ul li a{
+    font-family: "OpenSans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb( 255, 255, 255 );
+}
+footer .links{
+    width: 20%;
+}
+footer .links h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb( 255, 255, 255 );
+    margin: 30px 0;
+}
+footer .links .item{
+    display: flex;
+    justify-content: space-between;
+}
+footer .links .item .list{
+    width: 50%;
+}
+footer .links .item .list ul li{
+    margin: 15px 0;
+}
+footer .links .item .list ul li a{
+    font-family: "OpenSans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb( 255, 255, 255 );
+    transition: .8s;
+}
+footer .links .item ul li a:hover{
+    color: rgb( 8, 114, 185 );
+}
+footer .photos{
+    width: 35%;
+}
+footer .photos h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb( 255, 255, 255 );
+    margin: 30px 0;
+}
+footer .photos .images{
+    margin: 20px 0;
+}
+footer .photos .images img{
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* =-=-=-=-=-=-=-= Footer Part End =-=-=-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-=-= Footer Bottom Part Start =-=-=-=-=-=-=-=-= */
+
+#footer_bottom{
+    background-color: #555555;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+#footer_bottom p{
+    font-family: "OpenSans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb( 255, 255, 255 );
+}
+#footer_bottom h6{
+    font-family: "OpenSans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb( 8, 114, 185 );
+    margin-left: 5px;
+}
+
+/* =-=-=-=-=-=-=-= Footer Bottom Part End =-=-=-=-=-=-=-=-= */
